@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="js/main.js">
+	
+</script>
+<title>PieCoq</title>
+</head>
+
+<body Onload="javascript:main()">
+	<div id="page">
+
+		<div id="header">
+			<div id=logo>
+				<a href="index.html"><img src="image/baniere.png" /></a>
+			</div>
+			<div id="reste">
+				<form id="form_reste" method="get" action="">
+					<input class="button" id="login" type="button" value="Login" onclick="window.location.href='indexLogin.html'" />
+					<input class="button" id="logout" type="hidden" value="Logout" /><br />
+				</form>
+			</div>
+		</div>
+		
+		<div id="recherche">
+			<form id="form_recherche" method="get" action="">
+				<textarea name="recherche" id="text_recherche">Votre recherche</textarea>
+				<input class="button" id="button_recherche" type=submit value="Rechercher" />
+				<span id="txt_check_ami"><input id="check_ami" type="checkbox" value="SelectFriends"/> Dans mes amis</span>
+			</form>
+		</div>
+
+		<div id="stats">
+			<h1>
+				Zone stats<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</h1>
+		</div>
+
+		<div id="tweet">
+			<div id="add_comments">
+				<form method="get" action="">
+					<h1>Poster un message :</h1>
+					<textarea name="message">Votre message</textarea>
+					<br /> <input class="button" type="submit" value="Poster" />
+				</form>
+			</div>
+			<div id="liste_comments">
+				<h1>Liste des tweets</h1>
+				<form method="get" action="">
+					<div class="tweet">
+						<p>Text du tweet 1</p>
+						<span>Date</span> <span>Proprio 1</span> <input class="button"
+							type="button" value="+" /> <input class="button" type="hidden"
+							value="-" />
+					</div>
+					<div class="tweet">
+						<p>Text du tweet 2</p>
+						<span>Date</span> <span>Proprio 2</span> <input class="button"
+							type="hidden" value="+" /> <input class="button" type="button"
+							value="-" />
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="footer">
+			<h1>©PieCoq Corporetion</h1>
+		</div>
+	</div>
+</body>
+</html>
